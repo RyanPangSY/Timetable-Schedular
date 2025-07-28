@@ -36,7 +36,7 @@ const Timetable = ({shownDays, fromTime, toTime, sem, selectedCourses, hoveredCo
         return (
             <div className="Day">
                 <div className="DayTitle" style={{color: "white"}}>.</div>
-                {timeArray.map(t => <div key={t} className="TimeSlotTime">{(t < 10 ? '0' : '') + t.toString() + ":30-" + (t + 1< 10 ? '0' : '') + (t+1).toString() + ":20"}</div>)}
+                {timeArray.map(t => <div key={t} className="TimeSlotTime">{(t < 10 ? '0' : '') + t.toString() + ":00-" + (t < 10 ? '0' : '') + t.toString() + ":50"}</div>)}
             </div>
         );
     }

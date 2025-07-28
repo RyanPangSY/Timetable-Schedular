@@ -62,10 +62,43 @@ const Options = ({selectedCourses, setSelectedCourses, shownDays, setShownDays, 
                 };
             }
             
-            let endTime = parseInt(course["END TIME"]);
-            if (!endTime) endTime = 8;
-            let startTime = parseInt(course["START TIME"]);
-            if (!startTime) startTime = endTime;
+            // Parse time in "HH:MM" format and calculate time slots
+            const parseTimeToSlots = (startTimeString, endTimeString) => {
+                if (!startTimeString || !endTimeString) return { startTime: 8, endTime: 8 };
+                
+                // Helper function to parse individual time
+                const parseTime = (timeString) => {
+                    const parts = timeString.split(':');
+                    if (parts.length === 2) {
+                        return { hour: parseInt(parts[0]), minute: parseInt(parts[1]) };
+                    } else {
+                        // Fallback for integer hour values
+                        const hourValue = parseInt(timeString);
+                        return isNaN(hourValue) ? { hour: 8, minute: 0 } : { hour: hourValue, minute: 0 };
+                    }
+                };
+
+                const startParsed = parseTime(startTimeString);
+                const endParsed = parseTime(endTimeString);
+                
+                // Calculate start hour slot (always use the hour of start time)
+                let startTime = startParsed.hour;
+                
+                // Calculate end hour slot (if end has minutes > 0, include that hour)
+                let endTime = endParsed.hour;
+                if (endParsed.minute > 0) {
+                    endTime += 1;
+                }
+                
+                // Ensure logical time range
+                if (endTime <= startTime) {
+                    endTime = startTime + 1; // At minimum, occupy 1 hour slot
+                }
+                
+                return { startTime, endTime };
+            };
+            
+            const { startTime, endTime } = parseTimeToSlots(course["START TIME"], course["END TIME"]);
             let section = {
                 "startTime": startTime,
                 "endTime": endTime,

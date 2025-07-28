@@ -1,7 +1,7 @@
 {
   "name": "hku_timetable",
   "version": "0.2.5",
-  "homepage": "https://hovergecko.github.io/timetable",
+  "homepage": "https://RyanPangSY.github.io/timetable",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -28,7 +28,7 @@
     "typescript": "^5.1.6"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set NODE_OPTIONS=--no-deprecation && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

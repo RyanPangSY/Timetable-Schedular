@@ -14,8 +14,8 @@ function App() {
   const [shownDays, setShownDays] = useState([true, true, true, true, true, true, true]);
   const [fromTime, setFromTime] = useState(8);
   const [toTime, setToTime] = useState(22);
-  const lastUpdated = "2023/07/25";
-  const link = "https://github.com/hovergecko/timetable";
+  const lastUpdated = "2025/07/28";
+  const link = "https://github.com/RyanPangSY/timetable";
   // useEffect(() => console.log(selectedCourses));
   return (
     <div className="App">
