@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/timetable/static/css/main.ebda7ec1.css",
-    "main.js": "/timetable/static/js/main.8b38d1ef.js",
-    "static/js/787.ad158656.chunk.js": "/timetable/static/js/787.ad158656.chunk.js",
-    "index.html": "/timetable/index.html",
-    "main.ebda7ec1.css.map": "/timetable/static/css/main.ebda7ec1.css.map",
-    "main.8b38d1ef.js.map": "/timetable/static/js/main.8b38d1ef.js.map",
-    "787.ad158656.chunk.js.map": "/timetable/static/js/787.ad158656.chunk.js.map"
+    "main.css": "/Timetable-Schedular/static/css/main.ebda7ec1.css",
+    "main.js": "/Timetable-Schedular/static/js/main.8b38d1ef.js",
+    "static/js/787.ad158656.chunk.js": "/Timetable-Schedular/static/js/787.ad158656.chunk.js",
+    "index.html": "/Timetable-Schedular/index.html",
+    "main.ebda7ec1.css.map": "/Timetable-Schedular/static/css/main.ebda7ec1.css.map",
+    "main.8b38d1ef.js.map": "/Timetable-Schedular/static/js/main.8b38d1ef.js.map",
+    "787.ad158656.chunk.js.map": "/Timetable-Schedular/static/js/787.ad158656.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ebda7ec1.css",

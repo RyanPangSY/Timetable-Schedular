@@ -6,6 +6,6 @@ const BottomBar = ({version, lastUpdated, link}) => {
     );
 }
 
-// <a href="https://www.github.com/RyanPangSY/timetable">github.com/RyanPangSY/timetable</a>.
+// <a href="https://www.github.com/RyanPangSY/Timetable-Schedular">github.com/RyanPangSY/Timetable-Schedular</a>.
 
 export default BottomBar

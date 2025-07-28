@@ -1,7 +1,7 @@
 {
   "name": "hku_timetable",
   "version": "0.2.5",
-  "homepage": "https://RyanPangSY.github.io/timetable",
+  "homepage": "https://RyanPangSY.github.io/Timetable-Schedular",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
